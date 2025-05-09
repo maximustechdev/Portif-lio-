@@ -141,3 +141,19 @@ details[open] {
         display: none;
     }
 }
+
+.input_form {
+    padding: 5px;
+    border: 2.2px solid #00747C;
+    border-radius: 10px;
+    width: 200px;
+}
+
+#form_contato {
+    box-shadow: 5px 15px 47px 5px rgba(0, 187, 201, 0.59);
+    -webkit-box-shadow: 5px 15px 47px 5px rgba(0, 187, 201, 0.59);
+    -moz-box-shadow: 5px 15px 47px 5px rgba(0, 187, 201, 0.59);
+    width: 490px;
+    border-radius: 15px;
+    margin: auto;
+}
