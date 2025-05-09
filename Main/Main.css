@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #eeeeee;
 }
 
 nav,
@@ -11,7 +12,7 @@ nav,
     margin: 0;
     display: flex;
     justify-content: flex-end;
-    background: linear-gradient(90deg, #040FD9 0%, #040FD9 70%, #030BA6 100%);
+    background: linear-gradient(90deg, #00747C 0%, #00747C 20%, #00BBC9 100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -28,25 +29,54 @@ nav,
     gap: 50px;
     font-size: larger;
     color: black;
-
 }
 
-.detalhes_sobre {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-}
-
-details {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+#nome {
+    display: flex;
+    justify-content: left;
 }
 
 #sobre_mim {
-    padding-top: 45px;
+    padding-top: 100px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#contato {
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.box_shadow {
+    max-width: 600px;
+    margin: 50px 0 40px 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+#titulo_sou {
+    background-color: #00BBC9;
+    font-size: 25px;
+    height: 50px;
+    padding: 10px;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+
+#quem_sou {
+    padding: 20px;
+    text-align: justify;
+    background-color: transparent;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 80px;
 }
 
 summary {
@@ -56,21 +86,6 @@ summary {
 
 details[open] {
     background-color: #eef;
-}
-
-.informacoes {
-    margin: 0;
-}
-
-h2 {
-    text-align: center;
-    margin-top: 80px;
-}
-
-#informacoes_sobre {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 #table_sobre {

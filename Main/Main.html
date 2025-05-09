@@ -2,14 +2,17 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
-    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="Main.css" />
 </head>
 
 <body>
     <nav id="nav_informacoes">
+        <div id="nome">
+            <h3>Maximus Nascimento</h3>
+        </div>
         <div id="informacoes">
             <div class="informacoes">
                 <a href="#sobre_mim">Sobre mim</a>
@@ -27,69 +30,26 @@
     </nav>
 
     <div id="sobre_mim">
-        <h2>Sobre Mim</h2>
-        <div id="informacoes_sobre">
-            <div class="detalhes_sobre">
-
-                <details>
-                    <summary>Formação</summary>
-                    <p>Colégio Técnico de Campinas</p>
-                    <ul>
-                        <li>Técnico em Desenvolvimento de Sistemas</li>
-                    </ul>
-                </details>
-
-                <details>
-                    <summary>Diplomas</summary>
-                    <p>Embaixador do Sciencie Days</p>
-                    <ul>
-                        <li>
-                            Como embaixador do Science Days, troquei conhecimentos com especialistas e apresentei sobre
-                            foguetes e robôs, explorando suas aplicações e inovações tecnológicas. Durante o evento,
-                            desenvolvi habilidades de comunicação ao interagir com profissionais do setor aeroespacial,
-                            participando de discussões enriquecedoras. Essa experiência ampliou meu aprendizado e
-                            contribuiu significativamente para meu crescimento pessoal e profissional.
-                        </li>
-                    </ul>
-
-                </details>
-
-                <details>
-                    <summary>Certificados</summary>
-                    <p>Monitor na EXPOCotuca</p>
-                    <ul>
-                        <li>Colégio Técnico de Campinas - Unicamp</li>
-                        <li>Emitido: Setembro/2024</li>
-                    </ul>
-                    <p>Web Development Fundamentals</p>
-                    <ul>
-                        <li>IBM</li>
-                        <li>Emitido: Novembro/2024</li>
-                    </ul>
-                    <p>Certificado de participação da OBI</p>
-                    <ul>
-                        <li>Sociedade Brasileira de Computação - SBC</li>
-                        <li>Emitido: Outubro/2024</li>
-                    </ul>
-                </details>
-
-                <details>
-                    <summary>Experiência Profissional</summary>
-                    <p>Desenvolvedor Front-End na Empresa XYZ - 2022 até o momento</p>
-                </details>
-
-                <!-- <details>
-                    <summary>Outros Cursos</summary>
-                </details> -->
-
-                <details>
-                    <summary>Idiomas</summary>
-                    <p>Inglês - Intermediário</p>
-                </details>
+        <div class="box_shadow">
+            <h2 id="titulo_sou">Quem sou eu?</h2>
+            <div id="quem_sou">
+                <p>Atualmente, curso o Técnico em Desenvolvimento de Sistemas no Cotuca – Unicamp, onde desenvolvo
+                    projetos práticos e estudo disciplinas como Prática Profissional e Engenharia de Sistemas. Tenho
+                    conhecimentos em back-end, utilizando Python, Java e SQL para manipulação de dados e requisições, e
+                    em front-end, com HTML, CSS, JavaScript, além de bibliotecas e frameworks como Node.js e React.js.
+                </p>
+                <p>Utilizo ferramentas como Visual Studio Code, Insomnia e Microsoft SQL Server. Também tenho
+                    experiência com APIs, banco de dados, inglês intermediário e metodologias ágeis como o Scrum,
+                    trabalhando frequentemente em equipe para aprimorar habilidades como produtividade e resolução de
+                    problemas.</p>
             </div>
         </div>
     </div>
 
+    <div id="informacoes_academicas">
+        <h2>Sobre Mim</h2>
+        <!-- Conteúdo omitido por brevidade -->
+    </div>
 
     <div id="projetos_andamento">
         <h2>Projetos em Andamento</h2>
@@ -101,9 +61,33 @@
 
     <div id="contato">
         <h2>Contato</h2>
+        <div id="form_contato">
+            <form action="">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite o seu nome:" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Digite o seu email:" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" placeholder="Digite sua mensagem:" rows="4" required></textarea><br><br>
+
+                <div id='selects'>
+                    <div id="select">
+                        <label>Estado:</label>
+                        <select id="select_estado"></select>
+                    </div>
+                    <div id="select_cidade">
+                        <label>Cidade:</label>
+                        <select id="select-cidade"></select>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
 
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 
 </html>
